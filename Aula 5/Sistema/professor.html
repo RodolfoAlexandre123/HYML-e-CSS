@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>🏫 Sistema de cadastro Escolar</h1>
+    <p>Bem-vindos ao sistema de cadastro da nossa escola virtual</p>
+
+        <h2>📋 Menu de cadastro</h2>
+        <a href="aluno.html"><button>💯 Cadastrar Aluno</button></a>
+        <a href="curso.html"><button>🎓 Cadastrar Curso</button></a>
+        <a href="livro.html"><button>📚 Cadastrar Livro</button></a>
+        <a href="professor.html"><button>👨🏼‍🏫 Cadastrar Professore(a)</button></a>
+
+        <div class="formulario">
+        <h2>👨🏼‍🏫 Cadastrar Professores(a)</h2>
+        <form action="">
+
+          <label for="nome">Nome</label><br>
+          <input type="text"
+          placeholder="Digite seu nome"><br><br>
+
+          <label for="cpf">CPF</label><br>
+          <input type="text"
+          placeholder="Digite seu CPF"><br><br>
+
+          <label for="email">Email</label><br>
+          <input type="email"
+          placeholder="Digite seu Email"><br><br>
+
+          <label for="formacao">Formação</label><br>
+          <select name="formacao" id="formacao">
+            <option value="formacao">Selecione sua formação</option>
+            <option value="formacao">Tecnologias na Educação</option>
+            <option value="formacao">Educação Inclusiva e Libras</option>
+            <option value="formacao">Salud Mental e Bem-Estar</option>
+            <option value="formacao">Metodologias Ativas</option>
+            <option value="formacao">BNCC e Desenvolvimento Socioemocional</option>
+          </select><br><br>
+
+          <label for="disciplina">Disciplina que lesiona</label><br><br>
+
+          <input type="radio" name="disciplina" value="disciplina" id="disciplina">
+          <label for="disciplina">Matemática</label><br>
+
+          <input type="radio" name="disciplina" value="disciplina" id="disciplina">
+          <label for="disciplina">Língua Portuguesa</label><br>
+
+          <input type="radio" name="disciplina" value="disciplina" id="disciplina">
+          <label for="disciplina">História</label><br>
+
+          <input type="radio" name="disciplina" value="disciplina" id="disciplina">
+          <label for="disciplina">Geografia</label><br>
+
+          <input type="radio" name="disciplina" value="disciplina" id="disciplina">
+          <label for="disciplina">Ciência</label><br>
+
+          <input type="radio" name="disciplina" value="disciplina" id="disciplina">
+          <label for="disciplina">Educação Fisíca</label><br><br>
+          
+           <label for="horario">Carga Horária Semanal</label><br>
+           <input type="text">horas<br><br>
+
+           <label for="experiencia">Experiência</label><br>
+           <input type="text">anos<br><br>
+
+          <label for="disponibilidade">Disbonibilidade</label><br>
+
+          <input type="radio" name="disponibilidade" value="disponibilidade" id="disponibilidade">
+          <label for="disponibilidade">Período Integral</label><br>
+
+          <input type="radio" name="disponibilidade" value="disponibilidade" id="disponibilidade">
+          <label for="disponibilidade">Período Parcial</label><br><br>
+
+          <button>Cadastrar Aluno</button> <button type="reset">Limpar Dados</button>
+
+        </form>
+    </div>
+</body>
+</html>

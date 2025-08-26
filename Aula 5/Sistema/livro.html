@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>🏫 Sistema de cadastro Escolar</h1>
+    <p>Bem-vindos ao sistema de cadastro da nossa escola virtual</p>
+
+        <h2>📋 Menu de cadastro</h2>
+        <a href="aluno.html"><button>💯 Cadastrar Aluno</button></a>
+        <a href="curso.html"><button>🎓 Cadastrar Curso</button></a>
+        <a href="livro.html"><button>📚 Cadastrar Livro</button></a>
+        <a href="professor.html"><button>👨🏼‍🏫 Cadastrar Professore(a)</button></a>
+
+        <div class="formulario">
+        <h2>📚 Cadastrar Livro</h2>
+        <form action="">
+
+        <label for="livro">Título do livro</label><br>
+        <input type="text"
+        placeholder="Digite o título do livro"><br><br>
+
+        <label for="autor">Autor</label><br>
+        <input type="text"
+         placeholder="Digite o nome do autor"><br><br>
+
+         <label for="publicacao">Ano de publicação</label><br>
+         <input type="text"
+         placeholder="Digite o ano de publicação"><br><br>
+
+         <label for="editora">Editora</label><br>
+         <input type="text"
+         placeholder="Digite o nome da editora"><br><br>
+
+        <label for="genero">Gênero</label><br>
+          <select name="genero" id="genero">
+            <option value="genero">Selecione o gênero</option>
+            <option value="genero">Fantasia</option>
+            <option value="genero">Ficção Científica</option>
+            <option value="genero">Mistério/Suspense</option>
+            <option value="genero">Terror</option>
+            <option value="genero">Aventura</option>
+          </select><br><br>
+
+         <label for="paginas">Número de Páginas</label><br>
+         <input type="text"
+         placeholder="Digite o número de páginas"><br><br>
+
+         <label for="condicao">Condição do Livro</label><br>
+
+         <input type="radio" name="condicao" value="condicao" id="condicao">
+         <label for="condicao">Novo</label><br>
+
+         <input type="radio" name="condicao" value="condicao" id="condicao">
+         <label for="condicao">Usado-Bom estado</label><br>
+
+         <input type="radio" name="condicao" value="condicao" id="condicao">
+         <label for="condicao">Usado-Estado regular</label><br><br>
+
+         <label for="localização">Localização da Biblioteca</label><br>
+         <input type="text"
+         placeholder="Digite a localização da biblioteca"><br><br>
+
+         <label for="caracteristicas">Caracteristicas</label><br>
+
+         <input type="radio" name="caracteristicas" value="caracteristicas" id="caracteristicas">
+         <label for="caracteristicas">Ilustrado</label><br>
+
+          <input type="radio" name="caracteristicas" value="caracteristicas" id="caracteristicas">
+         <label for="caracteristicas">Capa Dura</label><br>
+
+          <input type="radio" name="caracteristicas" value="caracteristicas" id="caracteristicas">
+         <label for="caracteristicas">Edição Especial</label><br><br>
+
+         <button>Cadastrar Aluno</button> <button type="reset">Limpar Dados</button>
+        </form>
+    </div>
+</body>
+</html>
