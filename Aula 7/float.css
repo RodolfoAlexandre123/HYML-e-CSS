@@ -1,0 +1,31 @@
+.container {
+  border: 2px solid #333;
+  padding: 10px;
+  overflow: auto; /* mantém a altura do container */
+}
+
+.coluna {
+  height: 150px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 150px; /* centraliza o texto verticalmente */
+}
+
+.esquerda {
+  float: left;
+  width: 48%;   /* menos da metade */
+  margin-right: 2%; 
+}
+
+.direita {
+  float: right;
+  width: 48%;   /* menos da metade */
+}
+
+.rodape {
+  clear: both;  /* fica abaixo das colunas */
+  background: lightgreen;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
