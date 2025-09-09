@@ -1,0 +1,130 @@
+/* 1. Cor do parágrafo (TAG) */
+p {
+    color: blue;
+}
+
+/* 2. Título principal (ID) */
+#titulo-principal {
+    background-color: yellow;
+}
+
+/* 3. Subtítulos (CLASSE) */
+.subtitulo-verde {
+    color: green;
+}
+
+/* 4. Itens de lista (TAG) */
+li {
+    color: red;
+}
+
+/* 5. Duas caixas (CLASSE) */
+.caixa-um {
+    background-color: lightblue;
+}
+
+.caixa-dois {
+    background-color: lightcoral;
+}
+
+/* 6. Agrupando seletores (TAGS AGRUPADOS) */
+p.agrupado, h2.agrupado, h3.agrupado {
+    color: purple;
+}
+
+/* 7. Texto centralizado (ID) */
+#texto-centralizado {
+    text-align: center;
+}
+
+/* 8. Dois links diferentes (ID) */
+#link-um {
+    color: orange;
+}
+
+#link-dois {
+    color: teal;
+}
+
+/* 9. Classe compartilhada (CLASSE) */
+.negrito-compartilhado {
+    font-weight: bold;
+}
+
+/* 10. Imagens com borda (TAG) */
+img {
+    border: 2px solid green;
+}
+
+/* 11. Descendente básico (DESCENDENTE) */
+.container-descendente p {
+    color: darkred;
+}
+
+/* 12. Dois parágrafos diferentes (CLASSE) */
+.paragrafo-diff-um {
+    color: navy;
+}
+
+.paragrafo-diff-dois {
+    color: olive;
+}
+
+/* 13. Fonte personalizada (ID) */
+#fonte-arial {
+    font-family: Arial, sans-serif;
+}
+
+/* 14. Estilos diferentes (CLASSE) */
+.estilo-negrito {
+    font-weight: bold;
+}
+
+.estilo-italico {
+    font-style: italic;
+}
+
+.estilo-sublinhado {
+    text-decoration: underline;
+}
+
+/* 15. Título dentro da div (DESCENDENTE) */
+.div-com-titulo h3 {
+    color: sienna;
+}
+
+/* 16. Três caixas coloridas (ID) */
+#caixa-vermelha {
+    background-color: red;
+}
+
+#caixa-verde {
+    background-color: green;
+}
+
+#caixa-azul {
+    background-color: blue;
+}
+
+/* 17. Span destacado (CLASSE) */
+.span-destaque {
+    color: magenta;
+}
+
+/* 18. Caixa estilizada (ID) */
+#caixa-estilizada {
+    background-color: gray;
+    border: 1px solid black;
+}
+
+/* 19. Links sublinhados (CLASSE) */
+.link-sublinhado {
+    text-decoration: underline;
+}
+
+/* 20. Agrupando elementos (AGRUPADO) */
+body > h1:last-of-type,
+body > p:last-of-type,
+body > a:last-of-type {
+    color: #008080; /* Teal */
+}
