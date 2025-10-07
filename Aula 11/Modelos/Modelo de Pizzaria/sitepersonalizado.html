@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Liverpool FC - You'll Never Walk Alone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2959717:1593173331/festa.jpg?f=default&$p$f=3958ff0');
+  min-height: 90%;
+}
+.w3-red {background-color: #d00027 !important;} /* Cor principal do Liverpool */
+.w3-dark-grey {background-color: #111 !important;}
+.w3-text-red {color: #d00027 !important;}
+</style>
+</head>
+<body>
+
+<!-- Barra de navegação (no topo) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-red w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">INÍCIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">TÍTULOS</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTATO</a>
+    <a href="https://www.liverpoolfc.com/" class="w3-bar-item w3-button">SITE OFICIAL</a>
+    <a href="#localizacao" class="w3-bar-item w3-button">LOCALIZAÇÃO</a>
+  </div>
+</div>
+  
+<!-- Cabeçalho com imagem -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge w3-red">Fundado em 1892</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:90px">LIVERPOOL<br>FOOTBALL CLUB</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>LIVERPOOL FC</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Ver títulos</a></p>
+  </div>
+</header>
+
+<!-- Container dos títulos -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">NOSSOS TÍTULOS</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Champions');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Champions League</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Premier');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Premier League</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Outros');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Outros Títulos</div>
+      </a>
+    </div>
+
+    <div id="Champions" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>6x Campeão da Europa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">🏆</span></h1>
+      <p class="w3-text-grey">1977, 1978, 1981, 1984, 2005, 2019 — o Liverpool é um dos maiores clubes da Europa, com seis títulos da UEFA Champions League.</p>
+      <hr>
+      <h1><b>Final histórica em Istambul (2005)</b></h1>
+      <p class="w3-text-grey">Virada lendária contra o Milan — o “Milagre de Istambul”, com o inesquecível “You’ll Never Walk Alone”.</p>
+    </div>
+
+    <div id="Premier" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Campeão Inglês</b> <span class="w3-right w3-tag w3-dark-grey w3-round">19x</span></h1>
+      <p class="w3-text-grey">O Liverpool dominou o futebol inglês por décadas e conquistou a Premier League moderna em 2019-2020 sob comando de Jürgen Klopp.</p>
+      <hr>
+      <h1><b>Melhores Jogadores</b></h1>
+      <p class="w3-text-grey">Ídolos como Steven Gerrard, Kenny Dalglish, Ian Rush, Mohamed Salah e Virgil van Dijk marcaram a história do clube.</p>
+    </div>
+
+    <div id="Outros" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Copa da Inglaterra (FA Cup)</b> <span class="w3-right w3-tag w3-dark-grey w3-round">8x</span></h1>
+      <p class="w3-text-grey">Um dos clubes mais vitoriosos da FA Cup, com conquistas emocionantes ao longo dos anos.</p>
+      <hr>
+      <h1><b>Copa da Liga Inglesa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">9x</span></h1>
+      <p class="w3-text-grey">Recordista de títulos da competição — mostrando sua consistência em todas as épocas.</p>
+      <hr>
+      <h1><b>Mundial de Clubes da FIFA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">1x (2019)</span></h1>
+      <p class="w3-text-grey">Conquista inédita que coroou o Liverpool como o melhor time do mundo.</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Container Sobre -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre o Clube</h1>
+    <p>O Liverpool Football Club foi fundado em 1892 e tem sua casa no lendário estádio Anfield, em Liverpool, Inglaterra. Com uma das torcidas mais apaixonadas do mundo, o clube é símbolo de tradição, força e união.</p>
+    <p><strong>O Técnico?</strong> Arne Slot <img src="https://www.soccerblog.com.br/wp-content/uploads/2025/06/133937739048655957-6.jpg" style="width:150px" class="w3-circle w3-right" alt="Klopp"></p>
+    <p>Famoso pelo canto “You’ll Never Walk Alone”, o Liverpool inspira milhões de fãs em todo o planeta.</p>
+    <img src="https://static01.nyt.com/images/2019/06/01/sports/01champions19/01champions19-videoSixteenByNineJumbo1600.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Anfield">
+    <h1><b>Calendário e Jogos</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Seg & Ter: Treinos</p>
+        <p>Quarta-feira: Jogos da Champions</p>
+        <p>Quinta-feira: Descanso</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Sexta-feira: Preparação de jogo</p>
+        <p>Sábado: Partidas da Premier League</p>
+        <p>Domingo: Recuperação e mídia</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Localização -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="localizacao">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Nossa Casa</h1>
+    <p>O Liverpool manda seus jogos no lendário <strong>Anfield Stadium</strong>, localizado na cidade de Liverpool, Inglaterra. Com capacidade para mais de 54 mil torcedores, o estádio é um símbolo de paixão e tradição no futebol mundial.</p>
+    <p><strong>A torcida?</strong> Uma das mais emocionantes do mundo — basta ouvir “You’ll Never Walk Alone” para sentir a energia de Anfield. <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/05/GettyImages-1252778708-e1683421828910.jpg?w=1200&h=675&crop=1" style="width:150px" class="w3-circle w3-right" alt="Torcida"></p>
+    <p>Visitar Anfield é viver a história do futebol em cada canto das arquibancadas.</p>
+    <img src="https://ludopedio.org.br/wp-content/uploads/8.liverpool2-e1588086258216.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Anfield Stadium">
+  </div>
+</div>
+
+<!-- Imagem do mapa -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Liverpool_map.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contato -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contato</h1>
+    <p>Entre em contato com o clube através do site oficial ou das redes sociais. Seja parte da família Liverpool!</p>
+    <p><span class="w3-tag">YNWA!</span> You’ll Never Walk Alone — o lema que une torcedores em todo o mundo.</p>
+    <p class="w3-xxlarge"><strong>Junte-se</strong> à torcida, envie sua mensagem de apoio ou cadastre-se como membro oficial:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="E-mail" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem / Apoio" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">ENVIAR MENSAGEM</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>You'll Never Walk Alone ❤️⚽</p>
+</footer>
+
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
