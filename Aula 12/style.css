@@ -1,0 +1,255 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Mude para a fonte que preferir */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333; /* Cor do texto principal */
+}
+
+/* VARIÁVEIS DE COR (Para facilitar a mudança de tema) */
+:root {
+    --cor-primaria: #007BFF; /* Azul para destaque (links, botões) */
+    --cor-secundaria: #333; /* Cinza escuro para texto e fundo secundário */
+    --cor-fundo-secundaria: #e9ecef; /* Um cinza mais claro para alternar seções */
+    --cor-texto-claro: #fff;
+    --largura-maxima: 1100px;
+}
+
+/* ESTRUTURA GERAL */
+.container {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.secao {
+    padding: 60px 20px;
+}
+
+.cor-fundo-secundaria {
+    background-color: var(--cor-fundo-secundaria);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-primaria);
+    font-size: 2em;
+}
+
+/* HEADER / APRESENTAÇÃO */
+header#apresentacao {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover;
+    border: 4px solid var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: var(--cor-texto-claro);
+    margin-bottom: 20px;
+}
+
+/* LINKS DE CONTATO RÁPIDO (Botões) */
+.contato-rapido a {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contato-rapido a:hover {
+    background-color: #0056b3;
+}
+
+/* SEÇÃO HABILIDADES */
+.habilidades-lista {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.habilidade-card {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.habilidade-card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--cor-fundo-secundaria);
+    padding-bottom: 5px;
+}
+
+.habilidade-card ul {
+    list-style: none;
+}
+
+.habilidade-card li {
+    padding: 5px 0;
+}
+
+/* SEÇÃO FORMAÇÃO */
+.formacao-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item-formacao {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 5px solid var(--cor-primaria);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.item-formacao h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 5px;
+}
+
+/* SEÇÃO PROJETOS */
+.projetos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.projeto-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.projeto-card h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+.link-projeto {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.link-projeto:hover {
+    background-color: #555;
+}
+
+/* SEÇÃO CONTATO */
+.contato-detalhes, .redes-sociais {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contato-detalhes a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    border-bottom: 2px solid var(--cor-primaria);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* RESPONSIVIDADE BÁSICA */
+@media (max-width: 768px) {
+    .habilidades-lista {
+        flex-direction: column;
+    }
+
+    .habilidade-card {
+        min-width: 100%;
+    }
+
+    .projetos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    header#apresentacao {
+        padding: 60px 20px;
+    }
+}
+
+#projetos p {
+    text-align: center; /* CENTRALIZA O TEXTO */
+    max-width: 800px;  /* Limita a largura do parágrafo */
+    margin: 0 auto 40px auto; /* Centraliza o bloco do parágrafo na página e adiciona espaço abaixo */
+}
+
+#contato p {
+    text-align: center; /* CENTRALIZA O TEXTO */
+    max-width: 800px;  /* Limita a largura do parágrafo para que não fique muito esticado */
+    margin: 0 auto 10px auto; /* Centraliza o bloco do parágrafo e adiciona margem inferior */
+}
